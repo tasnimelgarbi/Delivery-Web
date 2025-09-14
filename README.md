@@ -32,12 +32,3 @@ The project is designed to practice building a functional delivery system with a
 - **CSS / Tailwind CSS** – Styling and responsive design  
 
 ---
-
-## Getting Started
-
-### Dashboard
-```bash
-git clone -b dashboard https://github.com/tasnimelgarbi/Delivary-Web.git
-cd Delivary-Web/dashboard
-npm install
-npm run dev
