@@ -1,0 +1,33 @@
+@keyframes scooter-fly {
+  0% {
+    transform: translateX(calc(90vw + 10rem)); 
+  }
+  100% {
+    transform: translateX(calc(-170vw - 10rem)); 
+  }
+}
+
+.animate-scooter-fly {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 10rem; 
+  transform: translateY(-50%);
+  animation: scooter-fly 6s linear forwards;
+}
+
+@keyframes delivery {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px); 
+  }
+  100% {
+    transform: translateX(0); 
+  }
+}
+
+.animate-delivery {
+  animation: delivery 0.5s ease-in-out infinite; 
+}

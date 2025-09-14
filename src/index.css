@@ -1,0 +1,9 @@
+@import "tailwindcss";
+*{
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #083344, #07495b, #047857);
+  min-height: 100vh;
+}

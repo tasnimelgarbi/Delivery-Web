@@ -1,0 +1,72 @@
+body{
+  animation: mody 1.5s ease-in-out;
+}
+@keyframes mody{
+  from { opacity: 0; }
+  to { opacity: 1; } 
+}
+
+.circle {
+  width: 250px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: visible; 
+}
+
+.circle img {
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circular-move {
+  animation: circular-move 2s linear infinite;
+}
+
+.circular-shadow {
+  box-shadow: 0 0 20px rgba(189, 168, 168, 0.8);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: shadow-move 1s linear infinite; 
+}
+
+
+@keyframes circular-move {
+  from {
+    transform: rotate(129.114deg) translate(10px) rotate(-129.114deg);
+  }
+  to {
+    transform: rotate(489.114deg) translate(10px) rotate(-489.114deg);
+  }
+}
+
+
+@keyframes shadow-move {
+  from {
+    transform: rotate(129.114deg) translate(10px) rotate(-129.114deg);
+  }
+  to {
+    transform: rotate(489.114deg) translate(10px) rotate(-489.114deg);
+  }
+}
+
+.circle img:hover,
+.circular-shadow:hover {
+  animation-play-state: paused; 
+}
+
+.scooter {
+  display: inline-block;
+  animation: scooterMove 1.5s ease-in-out infinite;
+}
+
+@keyframes scooterMove {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
